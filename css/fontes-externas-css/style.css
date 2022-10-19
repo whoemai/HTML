@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "old";
+  src: url("fonts/Chomsky.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+
+  /*
+  Tipos de format()
+  - opentype (otf)
+  - truetype (ttf)
+  - embedded-opentype
+  - truetype-aat (Apple Advanced Typography)
+  - svg
+  */
+}
+
+* {
+  font-family: "old", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background-image: linear-gradient(90deg, #591855, #321240);
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 3em;
+  color: #5c1c3a;
+}
+
+h2 {
+  color: #8d2757;
+}
+
+h3 {
+  color: #bf1b68;
+}
+
+main {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.356) 10px 15px 50px 5px;
+  width: 600px;
+  padding: 10px;
+  margin: auto;
+}
+
+p {
+  font-family: "Work Sans";
+  font-weight: 400;
+  text-align: justify;
+  color: black;
+}

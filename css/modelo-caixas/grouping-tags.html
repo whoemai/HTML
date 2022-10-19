@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: whitesmoke;
+      }
+
+      header {
+        background-color: skyblue;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 12px;
+      }
+
+      nav {
+        background-color: gray;
+        padding: 10px;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.295);
+      }
+
+      header > nav {
+        border-radius: 12px;
+      }
+
+      main {
+        background-color: skyblue;
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+      }
+
+      footer {
+        background-color: skyblue;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 12px;
+      }
+
+      footer > p {
+        text-align: center;
+        margin: 0px;
+      }
+
+      h2#sub {
+        background-color: gray;
+        padding: 12px;
+      }
+
+      aside > p {
+        background-color: gainsboro;
+        border-radius: 12px;
+        padding: 12px;
+      }
+
+      .text {
+        background-color: gray;
+        border-radius: 12px;
+        padding: 12px;
+
+        text-align: justify;
+      }
+
+      h2#sub {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu Site</h1>
+      <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">
+        <h2 id="sub">Subtitulo</h2>
+        <article>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            voluptatum nisi sit ratione, ipsum praesentium vero at tempora
+            debitis nostrum laborum dolore incidunt alias ipsam quos eveniet?
+            Nostrum, ipsam voluptatum.
+          </p>
+        </article>
+      </section>
+      <section id="noticias">
+        <article>
+          <h2>notici sobre o brasil</h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            nihil explicabo velit optio quod iusto quos tenetur similique,
+            repellat cum qui animi corporis fugiat sed odio quidem facere?
+            Inventore, beatae!
+          </p>
+        </article>
+        <aside>
+          <p>artigo escrito por pedro</p>
+        </aside>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido por Pedro</p>
+    </footer>
+  </body>
+</html>
