@@ -27,14 +27,17 @@
 
     <ul>
       <li>
-        <a href="/iframe/primeiro-iframe/primeiro-iframe.html" target="frame">Primeira pagina</a>
+        <a href="/iframe/primeiro-iframe/primeiro-iframe.html" target="frame"
+          >Primeira pagina</a
+        >
       </li>
       <li>
         <a href="/projetos-html/site-android/" target="frame">Segunda pagina</a>
       </li>
       <li>
         <a href="/iframe/primeiro-iframe/teste.html" target="frame"
-          >Terceira pagina</a>
+          >Terceira pagina</a
+        >
       </li>
     </ul>
 
@@ -48,7 +51,10 @@
       quos rerum!
     </p>
 
-    <iframe srcdoc="<h1>Escolha uma das opcoes acima</h1>" name="frame"></iframe>
+    <iframe
+      srcdoc="<h1>Escolha uma das opcoes acima</h1>"
+      name="frame"
+    ></iframe>
 
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quae
@@ -59,5 +65,41 @@
       praesentium, quia quibusdam voluptatibus eum rerum nobis mollitia in
       commodi minus, repellat veniam?
     </p>
+
+    <h1>colocando conteudo dentro de iframe</h1>
+
+    <h2>Videos</h2>
+
+    <div style="padding: 56.25% 0 0 0; position: relative">
+      <iframe
+        src="https://player.vimeo.com/video/219727723?h=ed9505e9d4&loop=1&title=0&byline=0&portrait=0"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <h2>Mapas do google</h2>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.3435642363543!2d-46.689180736299846!3d-23.592008415746314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5758d3548d13%3A0x89b2eced7816e8c5!2sJK%20Iguatemi!5e0!3m2!1spt-BR!2sbr!4v1667942419057!5m2!1spt-BR!2sbr"
+      width="400"
+      height="300"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <h2>Mapas do waze</h2>
+
+    <iframe
+      src="https://embed.waze.com/iframe?zoom=16&lat=-23.591668&lon=-46.689806&ct=livemap"
+      width="600"
+      height="450"
+      allowfullscreen
+    ></iframe>
   </body>
 </html>
