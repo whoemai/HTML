@@ -192,3 +192,13 @@ Ela é estruturada da seguinte forma: ```table > caption > thead > tbody > tfoot
 Fazemos a montagem da tabela como no html aonde temos o cabeça o corpo e o pé.  
 Para declarar os dados usamos ```TD``` e para declarar o título usamos o ```TH```.   
 E para termos um site de qualidade temos também que fazer o escopo da nossa tabela aonde fazemos com ```scope=" "```
+
+---
+
+## Formulários:
+
+Na criação do nosso primeiro formulário aprendemos que temos algumas regras a seguir como o uso do ```<label>```. Ele serve para que nosso navegador possa fazer a identificação do ```<input>``` com o label. assim deixando mais profissional nosso código e facilitando o navegador. Também vimos o uso das tag ```name & id```, e qual seria a diferença entre elas?   
+
+- id = usamos para fazer a ligação do HTML com JS   
+
+- name = usamos para fazer a ligação do HTML com PHP(ou qualquer outra linguagem)
