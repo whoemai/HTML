@@ -202,3 +202,6 @@ Na criação do nosso primeiro formulário aprendemos que temos algumas regras a
 - id = usamos para fazer a ligação do HTML com JS   
 
 - name = usamos para fazer a ligação do HTML com PHP(ou qualquer outra linguagem)
+
+Para colocarmos limite de caracteres minemos e máximos usamos o comando ```minlength=" "``` e ```maxlength=" "```.
+E também podemos colocar campos de data, hora, números, etc.
