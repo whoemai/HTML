@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* estilo telas */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: whitesmoke;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+menu ul {
+    list-style: none;
+}
+
+menu li {
+    display: inline-block;
+}
