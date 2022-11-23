@@ -2,63 +2,116 @@
 
 /* Versao as demais midias */
 
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3em;
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+/* Typical Device Breakpoints 
+
+Pequenas telas: ate 600px
+Celulares: de 600px ate 768px
+Tablet: 769px ate 992px
+Desktop: 992 ate 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print {
+  * {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  main {
+    border: 2px solid black;
+  }
+
+  main,
+  h1 {
+    text-shadow: none;
+    color: black;
+  }
+
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#pc {
+    display: none;
+  }
+  img#print {
+    display: block;
+  }
+  img#tv {
+    display: none;
+  }
 }
 
-html {
-  width: 100vw;
-  height: 100vh;
-}
+@media screen and (min-width:769px) and (max-width: 992px) {
 
-body {
-  background: black url(../image/back-phone.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
+  body {
+    background-image: url(../image/back-tablet.jpg);
+  }
 
-main {
-  background-color: rgba(255, 255, 255, 0.473);
-  width: 90vw;
-  margin: auto;
-  margin-top: 2em;
-  border-radius: 0.5em;
-  padding: 1em;
-}
-
-h1 {
-  text-align: center;
-  color: whitesmoke;
-  font-size: 2em;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
-}
-
-img {
-  display: block;
-  margin: auto;
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: block;
+  }
+  img#pc {
+    display: none;
+  }
+  img#print {
+    display: none;
+  }
+  img#tv {
+    display: none;
+  }
+  
 
 }
 
-img#phone {
-  display: block;
+@media screen and (min-width:992px) and (max-width: 1200px) {
+  body {
+    background-image: url(../image/back-pc.jpg);
+  }
+
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#pc {
+    display: block;
+  }
+  img#print {
+    display: none;
+  }
+  img#tv {
+    display: none;
+  }
 }
 
-img#tablet {
-  display: none;
-}
+@media screen and (min-width:1200px) {
+  body {
+    background-image: url(../image/back-tv.jpg);
+  }
 
-img#pc {
-  display: none;
-}
+  main {
+    width: 40em;
+  }
 
-img#print {
-  display: none;
-}
-
-img#tv {
-  display: none;
+  img#phone {
+    display: none;
+  }
+  img#tablet {
+    display: none;
+  }
+  img#pc {
+    display: none;
+  }
+  img#print {
+    display: none;
+  }
+  img#tv {
+    display: block;
+  }
 }
